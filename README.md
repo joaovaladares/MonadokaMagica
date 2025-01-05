@@ -1,4 +1,5 @@
 # MonadokaMagica 🌟
+![MonadokaMagica Banner](images/banner.jpg)
 
 A whimsical Haskell playground inspired by the magic of monads and the charm of anime.
 
