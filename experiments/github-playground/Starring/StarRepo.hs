@@ -22,4 +22,4 @@ main = do
                     GH.starRepoR (GH.mkOwnerName owner) (GH.mkRepoName repo)
             case result of
                 Left err -> putStrLn $ "Error: " ++ show err
-                Right () -> T.putStrLn $ T.concat ["Starred: ", owner, "/", repo]
+                Right () -> T.putStrLn $ T.concat ["Unstarred: ", owner, "/", repo]
