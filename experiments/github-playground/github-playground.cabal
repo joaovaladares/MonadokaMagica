@@ -15,7 +15,7 @@ library
 
 executable starring
   main-is: StarRepo.hs
-  hs-source-dirs: Starring
+  hs-source-dirs: Activity/Starring
   build-depends: 
         base >= 4.14 && < 5
       , text
@@ -26,7 +26,7 @@ executable starring
 
 executable unstarring
   main-is: UnstarRepo.hs
-  hs-source-dirs: Starring
+  hs-source-dirs: Activity/Starring
   build-depends: 
         base >= 4.14 && < 5
       , text
@@ -36,7 +36,7 @@ executable unstarring
 
 executable prompt-starring
   main-is: PromptStarring.hs
-  hs-source-dirs: Starring
+  hs-source-dirs: Activity/Starring 
   build-depends: 
         base >= 4.14 && < 5
       , text
@@ -44,3 +44,36 @@ executable prompt-starring
       , transformers
       , github-playground
   default-language: Haskell2010
+
+executable starred-repos
+  main-is: StarredRepos.hs
+  hs-source-dirs: Activity/Starring
+  build-depends:
+        base >= 4.14 && < 5
+        , github
+        , github-playground
+        , text
+        , vector
+  default-language: Haskell2010
+
+executable show-issue
+  main-is: ShowIssue.hs
+  hs-source-dirs: Issues
+  build-depends:
+        base >= 4.14 && < 5
+        , github
+        , github-playground
+        , text
+  default-language: Haskell2010
+
+executable show-issue-formatting
+  main-is: ShowIssueFormatting.hs
+  hs-source-dirs: Issues
+  build-depends:
+        base >= 4.14 && < 5
+        , github
+        , github-playground
+        , text
+        , split
+  default-language: Haskell2010
+
